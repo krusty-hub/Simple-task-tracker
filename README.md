@@ -1,6 +1,6 @@
 # Task Tracker Mini Project
 
-A simple full-stack Task Tracker application to combine frontend and backend knowledge. 
+A simple full-stack Task Tracker application
 
 ## Tech Stack
 - **Frontend**: HTML, CSS, JavaScript
