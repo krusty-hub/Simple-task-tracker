@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for premium typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons for premium icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Task Tracker</h1>
+            <p>Stay organized and focused.</p>
+        </header>
+
+        <main>
+            <div class="add-task-container">
+                <input type="text" id="taskInput" placeholder="What needs to be done?" autocomplete="off">
+                <button id="addTaskBtn" aria-label="Add Task">
+                    <i class="ph ph-plus-circle"></i>
+                </button>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <div class="task-list-container">
+                <ul id="taskList" class="task-list">
+                    <!-- Tasks will be injected here via JavaScript -->
+                    <div class="empty-state">
+                        <i class="ph ph-spinner ph-spin"></i>
+                        <p>Loading tasks...</p>
+                    </div>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
